@@ -42,7 +42,7 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    tools:listitem="@layout/board_read_img_item" >
+                    tools:listitem="@layout/board_read_img_item">
 
                 </androidx.viewpager2.widget.ViewPager2>
 
@@ -113,17 +113,17 @@
                 android:paddingBottom="10dp"
                 android:background="@color/strawberry_light">
 
-<!--                <androidx.recyclerview.widget.RecyclerView-->
-<!--                    android:id="@+id/recycler_chat_list"-->
-<!--                    android:layout_width="360dp"-->
-<!--                    android:layout_height="249dp"-->
-<!--                    android:clipToPadding="false"-->
-<!--                    android:orientation="vertical"-->
-<!--                    android:scrollbars="vertical"-->
-<!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toTopOf="parent" />-->
+                <!--                <androidx.recyclerview.widget.RecyclerView-->
+                <!--                    android:id="@+id/recycler_chat_list"-->
+                <!--                    android:layout_width="360dp"-->
+                <!--                    android:layout_height="249dp"-->
+                <!--                    android:clipToPadding="false"-->
+                <!--                    android:orientation="vertical"-->
+                <!--                    android:scrollbars="vertical"-->
+                <!--                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toTopOf="parent" />-->
                 <ListView
                     android:layout_width="360dp"
                     android:layout_height="300dp"

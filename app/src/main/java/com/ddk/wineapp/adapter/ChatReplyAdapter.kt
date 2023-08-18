@@ -1,5 +1,6 @@
 package com.ddk.wineapp.adapter
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,7 @@ class ChatReplyAdapter(val context: Context) : BaseAdapter() {
     private var mBinding: BoardReadChatItemBinding? = null
     private val binding get() = mBinding!!
 
+    @SuppressLint("ViewHolder")
     override fun getView(position: Int, p1: View?, p2: ViewGroup?): View {
         mBinding = BoardReadChatItemBinding.inflate(LayoutInflater.from(context))
 

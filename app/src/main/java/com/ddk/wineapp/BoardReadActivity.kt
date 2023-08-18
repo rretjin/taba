@@ -15,20 +15,22 @@ class BoardReadActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_board_read)
 
+        // 뷰 바인딩 설정
         binding = ActivityBoardReadBinding.inflate(layoutInflater)
 
+        // 상단 툴바 설정
         binding.boardToolbar.setNavigationIcon(R.drawable.ic_arrowleft_dark)
-        binding.boardToolbar.setNavigationOnClickListener {
-            finish()
-        }
+        binding.boardToolbar.setNavigationOnClickListener { finish() }
 
         // 레시피 사진 처리 - 뷰페이저
         val viewPager2 = binding.viewpagerRecipe
         viewPager2.adapter = RecipeViewPagerAdapter()
         viewPager2.orientation = ViewPager2.ORIENTATION_HORIZONTAL
 
+        // 댓글 리스트 설정
         binding.chatListView.adapter = ChatReplyAdapter(this)
 
+        // 스크랩 버튼 설정
         binding.scrapButton.setOnClickListener {
             binding.scrapButton.isSelected = !binding.scrapButton.isSelected
         }

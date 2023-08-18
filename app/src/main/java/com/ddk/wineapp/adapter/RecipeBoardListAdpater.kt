@@ -49,7 +49,7 @@ class RecipeBoardListAdapter(
         holder.chatCount?.text = item.chatCount.toString() ?: "0"
 
         holder.itemView.setOnClickListener {
-            val intent = Intent(holder.itemView?.context, BoardReadActivity::class.java)
+            val intent = Intent(holder.itemView.context, BoardReadActivity::class.java)
             ContextCompat.startActivity(holder.itemView.context, intent, null)
         }
     }

@@ -17,6 +17,7 @@ class SettingFragment : Fragment() {
     ): View {
         binding = FragmentSettingBinding.inflate(inflater)
 
+        // 뒤로 가기 버튼 설정
         binding.backButton.setOnClickListener {
             findNavController().popBackStack()
         }

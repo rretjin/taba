@@ -1,6 +1,6 @@
 package com.ddk.wineapp.model
 
-class ChatReply(
+data class ChatReply(
     val name: String,
     val content: String,
 )

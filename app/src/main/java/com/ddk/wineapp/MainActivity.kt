@@ -14,16 +14,16 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
-        // Setup view binding
+        // 뷰 바인딩 설정
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Setup bottom navigation bar
+        // 하단 네비게이션 바 설정
         val host: NavHostFragment = supportFragmentManager
             .findFragmentById(R.id.nav_host_fragment_activity_main) as NavHostFragment? ?: return
         binding.navView.setupWithNavController(host.navController)
 
-        // Inactivate dark mode
+        // 다크모드 비활성화
         AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO)
     }
 }

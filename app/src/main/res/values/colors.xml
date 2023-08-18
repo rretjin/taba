@@ -15,12 +15,4 @@
     <color name="gray">#F5F5F5</color>
     <color name="gray_dark">#D4D4D4</color>
 
-    <!--  medal colors  -->
-    <color name="gold_light">#FFF6C4</color>
-    <color name="gold_dark">#FFDA1E</color>
-    <color name="silver_light">#E7E7E7</color>
-    <color name="silver_dark">#D1D1D1</color>
-    <color name="bronze_light">#F4E5CF</color>
-    <color name="bronze_dark">#DBB782</color>
-
 </resources>
